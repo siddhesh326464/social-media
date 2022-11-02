@@ -1,0 +1,16 @@
+{% include 'base.html' %}
+
+{% block body %}
+<div class="container " >
+  <div class="card " style="width: 18rem;">
+    <img src={{profile.image.url}} class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{profile.user}}</h5>
+      <p class="card-text">{{profile.bio}}</p>
+      <p class="card-text">followers :{{profile.followers}}</p>
+      <p class="card-text">following :{{profile.following}}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
+{% endblock body %}
